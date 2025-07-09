@@ -1,0 +1,127 @@
+body {
+  background: linear-gradient(135deg, #181c24 0%, #232837 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #f5f6fa;
+}
+
+.App {
+  max-width: 700px;
+  margin: 40px auto;
+  background: rgba(35,40,55,0.98);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  padding: 32px 24px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #fed6e3;
+  background: linear-gradient(90deg, #49a09d 0%, #fed6e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prefs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+label {
+  min-width: 110px;
+  font-weight: 500;
+  color: #fed6e3;
+}
+
+input[type="range"] {
+  flex: 1;
+  accent-color: #49a09d;
+}
+
+button[type="submit"], .MuiButton-containedPrimary {
+  background: linear-gradient(90deg, #49a09d 0%, #fed6e3 100%);
+  color: #181c24;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(73,160,157,0.18);
+}
+button[disabled], .MuiButton-containedPrimary:disabled {
+  background: #232837;
+  color: #b2becd;
+  cursor: not-allowed;
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+}
+
+.result-item {
+  background: linear-gradient(90deg, #232837 0%, #181c24 100%);
+  border-radius: 12px;
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 6px rgba(73,160,157,0.10);
+}
+
+.result-item h3, .result-item .MuiTypography-h6 {
+  margin: 0 0 6px 0;
+  color: #fed6e3;
+}
+
+.result-item ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.MuiAppBar-root {
+  background: linear-gradient(90deg, #232837 0%, #49a09d 100%);
+  box-shadow: 0 2px 8px rgba(73,160,157,0.08);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #181c24;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f5f6fa;
+}
+
+.App-link {
+  color: #49a09d;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
